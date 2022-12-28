@@ -1,7 +1,7 @@
 <template>
-<div>
+<div @dragover="allowDrop" @drop="onDrop(exchange)">
     <v-chip-group selected-class="text-primary" column>
-        <v-chip draggable  @dragover="allowDrop" @dragstart="draggedData=exchange" @drop="onDrop(exchange)" v-for="exchange in exchanges" :key="exchange">
+        <v-chip draggable   @dragstart="draggedData=exchange"  v-for="exchange in exchanges" :key="exchange">
             {{ exchange }}
         </v-chip>
     </v-chip-group>
