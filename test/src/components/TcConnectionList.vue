@@ -25,7 +25,6 @@ import TcChipList from '../components/TcChipList.vue'
 export default {
     components: {
         TcChipList,TcConnectionIndicator
-        
     },
     props: [
         'servers'
